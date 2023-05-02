@@ -4,11 +4,13 @@ puts "Exercise 1"
 puts "----------"
 
 # Your code goes below here ...
-class Stores < ActiveRecord::Base
+class Store < ActiveRecord::Base
 end
 
-burnaby = Stores.create(id: 1, name: "Burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: true );
+Store.create(name: "Burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: true )
 
-richmond = Stores.create(id: 2, name: "Richmond", annual_revenue: 1260000, mens_apparel: false, womens_apparel: true);
+Store.create(name: "Richmond", annual_revenue: 1260000, mens_apparel: false, womens_apparel: true);
 
-gastown = Stores.create(id: 3, name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_apparel: false);
+Store.create(name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_apparel: false);
+
+Store.count
