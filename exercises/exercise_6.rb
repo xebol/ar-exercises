@@ -11,14 +11,13 @@ puts "----------"
 # Your code goes here ...
 # 1. Add the following code _directly_ inside the Store model (class): `has_many :employees`
 
-class Store < ActiveRecord::Base
-  has_many :employees
-end
+# class Store < ActiveRecord::Base
+  
+# end
 
 # 2. Add the following code directly inside the Employee model (class): `belongs_to :store`
 
 class Employee < ActiveRecord::Base
-  belongs_to :store
 end
 
 # 3. Add some data into employees. Here's an example of one (note how it differs from how you create stores): `@store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)`
